@@ -24,4 +24,10 @@ We welcome contributions for Hacktoberfest and beyond! Please read the following
 * [**CONTRIBUTING.md**](CONTRIBUTING.md) for contribution guidelines and setup.
 * [**CODE_OF_CONDUCT.md**](CODE_OF_CONDUCT.md) for community standards.
 
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE) – see the LICENSE file for details.
+
+
 Check the [**Issues**](https://github.com/bratergit/stocks/issues) section for tasks labeled **`hacktoberfest`** and **`good first issue`**.
+
