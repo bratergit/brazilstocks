@@ -19,6 +19,19 @@ This repository aims to be a central hub for tools related to:
 | **Automation/Bots** | Node.js | Ideal for building fast, concurrent crypto trading bot components. |
 | **Environment** | Docker / Docker Compose | Ensuring reproducible environments for all contributors. |
 
+## 🚀 Local Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/bratergit/stocks.git
+   cd stocks
+   ```
+
+2. **Run the application:**
+   ```bash
+   docker-compose up --build
+   ```
+
 ## 🤝 Contribution Guide
 We welcome contributions for Hacktoberfest and beyond! Please read the following files to get started:
 * [**CONTRIBUTING.md**](CONTRIBUTING.md) for contribution guidelines and setup.
