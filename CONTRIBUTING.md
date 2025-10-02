@@ -35,3 +35,35 @@ Always work in a new, descriptive branch. Use prefixes like `feat/`, `fix/`, or 
 ```bash
 # Example: Creating a new feature branch
 git checkout -b feat/add-b3-screener
+```
+
+Step 2: Make Your Changes
+Implement your feature, fix the bug, or update the documentation. Ensure your code follows the existing style and conventions.
+
+Step 3: Commit Your Changes
+Write clear and concise commit messages. Follow the Conventional Commits specification (e.g., feat: add new B3 stock screener).
+
+Bash
+
+git add .
+git commit -m "feat: implement basic SELIC rate calculation function"
+Step 4: Push to Your Fork
+Upload your changes to your fork on GitHub.
+
+Bash
+
+git push origin feat/add-b3-screener
+Step 5: Open a Pull Request (PR)
+Go to your fork on GitHub and click the 'Compare & pull request' button.
+
+Fill out the PR Template: Provide a detailed description of your changes.
+
+Reference the Issue: Link your PR to the relevant issue using keywords like Closes #XX or Fixes #YY.
+
+Describe the Solution: Explain what you did and why.
+
+Screenshots/Demos: Include visual aids for UI changes (e.g., Streamlit dashboards).
+
+Submit your PR. A maintainer will review it, provide feedback, and merge it upon approval.
+
+
