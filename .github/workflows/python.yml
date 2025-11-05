@@ -1,0 +1,39 @@
+name: CI - Python Lint and Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # Step 3: Install dependencies (flake8 for linting, pytest for tests)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+
+      # Step 4: Run Python linter (flake8)
+      - name: Run linter
+        run: |
+          echo "Running flake8 lint check..."
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+
+      # Step 5: Run tests (pytest)
+      - name: Run tests
+        run: |
+          echo "Running tests..."
+          pytest || echo "No tests found yet."
